@@ -56,7 +56,7 @@ Contributions are very welcome! 🎉
 ### How to add new tasks
 
 1. **Fork** this repository
-2. Edit `questions_reduced.json`
+2. Edit `questions.json`
 
    * Add your tasks at the end of the array (please keep valid JSON)
    * Use the same structure as shown above
@@ -72,7 +72,7 @@ We’ll review your PR, check formatting and correctness, and merge it once read
 
 * Stick to **real, working Linux commands** (tested on common distros)
 * Prefer **concise, practical tasks** over niche or overly complex ones
-* Keep explanations **short (1–3 sentences)** — this is a cheatsheet, not a full tutorial
+* Keep explanations **short (1–3 sentences)**
 * Provide a `resource` link if possible (usually the manpage, e.g. `https://man7.org/...`). If none exists, use `"title": "resource missing"`
 
 ---
