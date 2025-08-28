@@ -1,0 +1,752 @@
+[
+  {
+    "desc": "List all files including hidden, detailed view",
+    "cmd": "ls -la",
+    "difficulty": "easy",
+    "explanation": "Lists directory contents. -l shows long format (permissions, owner, size, time), -a includes hidden dotfiles.",
+    "category": "Filesystem",
+    "tags": [
+      "filesystem",
+      "listing"
+    ],
+    "resource": {
+      "title": "ls man page",
+      "url": "https://man7.org/linux/man-pages/man1/ls.1.html"
+    }
+  },
+  {
+    "desc": "Go up one directory",
+    "cmd": "cd ..",
+    "difficulty": "easy",
+    "explanation": "Changes the current working directory. '..' goes up one level.",
+    "category": "Filesystem",
+    "tags": [
+      "filesystem",
+      "navigation"
+    ],
+    "resource": {
+      "title": "",
+      "url": ""
+    }
+  },
+  {
+    "desc": "Show current working directory",
+    "cmd": "pwd",
+    "difficulty": "easy",
+    "explanation": "Prints the full path of the current working directory.",
+    "category": "Filesystem",
+    "tags": [
+      "filesystem",
+      "path"
+    ],
+    "resource": {
+      "title": "pwd man page",
+      "url": "https://man7.org/linux/man-pages/man1/pwd.1.html"
+    }
+  },
+  {
+    "desc": "Print text 'Hello World' to the terminal",
+    "cmd": "echo 'Hello World'",
+    "difficulty": "easy",
+    "explanation": "Prints the given text/variable to standard output.",
+    "category": "Shell Basics",
+    "tags": [
+      "shell basics",
+      "print"
+    ],
+    "resource": {
+      "title": "echo man page",
+      "url": "https://man7.org/linux/man-pages/man1/echo.1.html"
+    }
+  },
+  {
+    "desc": "Create a directory named 'test'",
+    "cmd": "mkdir test",
+    "difficulty": "easy",
+    "explanation": "Creates directories. With -p, also creates parent directories as needed.",
+    "category": "Filesystem",
+    "tags": [
+      "filesystem",
+      "create"
+    ],
+    "resource": {
+      "title": "mkdir man page",
+      "url": "https://man7.org/linux/man-pages/man1/mkdir.1.html"
+    }
+  },
+  {
+    "desc": "Create nested directories 'src/utils'",
+    "cmd": "mkdir -p src/utils",
+    "difficulty": "easy",
+    "explanation": "Creates directories. With -p, also creates parent directories as needed.",
+    "category": "Filesystem",
+    "tags": [
+      "filesystem",
+      "create"
+    ],
+    "resource": {
+      "title": "mkdir man page",
+      "url": "https://man7.org/linux/man-pages/man1/mkdir.1.html"
+    }
+  },
+  {
+    "desc": "Remove an empty directory named 'test'",
+    "cmd": "rmdir test",
+    "difficulty": "easy",
+    "explanation": "Removes an empty directory. Fails if the directory is not empty.",
+    "category": "Filesystem",
+    "tags": [
+      "filesystem",
+      "directories"
+    ],
+    "resource": {
+      "title": "rmdir man page",
+      "url": "https://man7.org/linux/man-pages/man1/rmdir.1.html"
+    }
+  },
+  {
+    "desc": "Create an empty file called notes.txt",
+    "cmd": "touch notes.txt",
+    "difficulty": "easy",
+    "explanation": "Creates an empty file or updates the file's modification time if it exists.",
+    "category": "Filesystem",
+    "tags": [
+      "filesystem",
+      "create"
+    ],
+    "resource": {
+      "title": "touch man page",
+      "url": "https://man7.org/linux/man-pages/man1/touch.1.html"
+    }
+  },
+  {
+    "desc": "Display the contents of notes.txt",
+    "cmd": "cat notes.txt",
+    "difficulty": "easy",
+    "explanation": "Concatenates and prints file contents to standard output.",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "stdout"
+    ],
+    "resource": {
+      "title": "cat man page",
+      "url": "https://man7.org/linux/man-pages/man1/cat.1.html"
+    }
+  },
+  {
+    "desc": "Show the first 5 lines of notes.txt",
+    "cmd": "head -n 5 notes.txt",
+    "difficulty": "easy",
+    "explanation": "Shows the first N lines of a file; -n 5 shows five lines.",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "preview"
+    ],
+    "resource": {
+      "title": "head man page",
+      "url": "https://man7.org/linux/man-pages/man1/head.1.html"
+    }
+  },
+  {
+    "desc": "Show the last 10 lines of notes.txt",
+    "cmd": "tail -n 10 notes.txt",
+    "difficulty": "easy",
+    "explanation": "Shows the last N lines of a file. With -f, follows new lines as they are written.",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "preview"
+    ],
+    "resource": {
+      "title": "tail man page",
+      "url": "https://man7.org/linux/man-pages/man1/tail.1.html"
+    }
+  },
+  {
+    "desc": "Count the number of lines in notes.txt",
+    "cmd": "wc -l notes.txt",
+    "difficulty": "easy",
+    "explanation": "Counts lines (-l), words (-w), and bytes (-c) for files.",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "count"
+    ],
+    "resource": {
+      "title": "wc man page",
+      "url": "https://man7.org/linux/man-pages/man1/wc.1.html"
+    }
+  },
+  {
+    "desc": "Copy file a.txt to b.txt",
+    "cmd": "cp a.txt b.txt",
+    "difficulty": "easy",
+    "explanation": "Copies files or directories.",
+    "category": "Filesystem",
+    "tags": [
+      "filesystem",
+      "copy"
+    ],
+    "resource": {
+      "title": "cp man page",
+      "url": "https://man7.org/linux/man-pages/man1/cp.1.html"
+    }
+  },
+  {
+    "desc": "Move file a.txt into folder backup/",
+    "cmd": "mv a.txt backup/",
+    "difficulty": "easy",
+    "explanation": "Moves or renames files or directories.",
+    "category": "Filesystem",
+    "tags": [
+      "filesystem",
+      "move"
+    ],
+    "resource": {
+      "title": "mv man page",
+      "url": "https://man7.org/linux/man-pages/man1/mv.1.html"
+    }
+  },
+  {
+    "desc": "Delete a file called old.log",
+    "cmd": "rm old.log",
+    "difficulty": "easy",
+    "explanation": "Removes files. Use with care; deleted files are not sent to trash.",
+    "category": "Filesystem",
+    "tags": [
+      "filesystem",
+      "delete"
+    ],
+    "resource": {
+      "title": "rm man page",
+      "url": "https://man7.org/linux/man-pages/man1/rm.1.html"
+    }
+  },
+  {
+    "desc": "Show calendar for current month",
+    "cmd": "cal",
+    "difficulty": "easy",
+    "explanation": "Displays a calendar for the current month (or given month/year).",
+    "category": "System Info",
+    "tags": [
+      "system info",
+      "calendar"
+    ],
+    "resource": {
+      "title": "cal man page",
+      "url": "https://man7.org/linux/man-pages/man1/cal.1.html"
+    }
+  },
+  {
+    "desc": "Display the current date and time",
+    "cmd": "date",
+    "difficulty": "easy",
+    "explanation": "Prints or sets the system date and time.",
+    "category": "System Info",
+    "tags": [
+      "system info",
+      "clock"
+    ],
+    "resource": {
+      "title": "date man page",
+      "url": "https://man7.org/linux/man-pages/man1/date.1.html"
+    }
+  },
+  {
+    "desc": "Show disk usage in human-readable format",
+    "cmd": "df -h",
+    "difficulty": "easy",
+    "explanation": "Shows disk space usage of filesystems. -h uses human-readable units.",
+    "category": "System Info",
+    "tags": [
+      "system info",
+      "disk"
+    ],
+    "resource": {
+      "title": "df man page",
+      "url": "https://man7.org/linux/man-pages/man1/df.1.html"
+    }
+  },
+  {
+    "desc": "Show memory usage in human-readable format",
+    "cmd": "free -h",
+    "difficulty": "easy",
+    "explanation": "Displays system memory usage. -h uses human-readable units.",
+    "category": "System Info",
+    "tags": [
+      "system info",
+      "memory"
+    ],
+    "resource": {
+      "title": "free man page",
+      "url": "https://man7.org/linux/man-pages/man1/free.1.html"
+    }
+  },
+  {
+    "desc": "Clear the terminal screen",
+    "cmd": "clear",
+    "difficulty": "easy",
+    "explanation": "Clears the terminal display.",
+    "category": "Shell Basics",
+    "tags": [
+      "shell basics",
+      "screen"
+    ],
+    "resource": {
+      "title": "clear man page",
+      "url": "https://man7.org/linux/man-pages/man1/clear.1.html"
+    }
+  },
+  {
+    "desc": "Print only the first column of data.csv (comma separated)",
+    "cmd": "cut -d, -f1 data.csv",
+    "difficulty": "easy",
+    "explanation": "Extracts sections from each line. -d sets delimiter, -f selects fields.",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "columns"
+    ],
+    "resource": {
+      "title": "cut man page",
+      "url": "https://man7.org/linux/man-pages/man1/cut.1.html"
+    }
+  },
+  {
+    "desc": "Sort the contents of list.txt alphabetically",
+    "cmd": "sort list.txt",
+    "difficulty": "easy",
+    "explanation": "Sorts lines of text alphabetically or numerically (with flags).",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "ordering"
+    ],
+    "resource": {
+      "title": "sort man page",
+      "url": "https://man7.org/linux/man-pages/man1/sort.1.html"
+    }
+  },
+  {
+    "desc": "Show unique lines from list.txt",
+    "cmd": "uniq list.txt",
+    "difficulty": "easy",
+    "explanation": "Filters adjacent duplicate lines; often used after sort.",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "deduplicate"
+    ],
+    "resource": {
+      "title": "uniq man page",
+      "url": "https://man7.org/linux/man-pages/man1/uniq.1.html"
+    }
+  },
+  {
+    "desc": "Chain commands: list files then show current directory",
+    "cmd": "ls && pwd",
+    "difficulty": "easy",
+    "explanation": "Lists directory contents. -l shows long format (permissions, owner, size, time), -a includes hidden dotfiles.",
+    "category": "Filesystem",
+    "tags": [
+      "filesystem",
+      "listing"
+    ],
+    "resource": {
+      "title": "ls man page",
+      "url": "https://man7.org/linux/man-pages/man1/ls.1.html"
+    }
+  },
+  {
+    "desc": "Redirect output of ls to files.txt",
+    "cmd": "ls > files.txt",
+    "difficulty": "easy",
+    "explanation": "Lists directory contents. -l shows long format (permissions, owner, size, time), -a includes hidden dotfiles.",
+    "category": "Filesystem",
+    "tags": [
+      "filesystem",
+      "listing"
+    ],
+    "resource": {
+      "title": "ls man page",
+      "url": "https://man7.org/linux/man-pages/man1/ls.1.html"
+    }
+  },
+  {
+    "desc": "Append output of date to log.txt",
+    "cmd": "date >> log.txt",
+    "difficulty": "easy",
+    "explanation": "Prints or sets the system date and time.",
+    "category": "System Info",
+    "tags": [
+      "system info",
+      "clock"
+    ],
+    "resource": {
+      "title": "date man page",
+      "url": "https://man7.org/linux/man-pages/man1/date.1.html"
+    }
+  },
+  {
+    "desc": "Show currently logged-in user",
+    "cmd": "whoami",
+    "difficulty": "easy",
+    "explanation": "Prints the effective username.",
+    "category": "Users",
+    "tags": [
+      "users",
+      "identity"
+    ],
+    "resource": {
+      "title": "whoami man page",
+      "url": "https://man7.org/linux/man-pages/man1/whoami.1.html"
+    }
+  },
+  {
+    "desc": "Search for the word 'TODO' in notes.txt",
+    "cmd": "grep 'TODO' notes.txt",
+    "difficulty": "easy",
+    "explanation": "Searches input for lines matching a pattern. Supports regex and many flags.",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "filter"
+    ],
+    "resource": {
+      "title": "grep man page",
+      "url": "https://man7.org/linux/man-pages/man1/grep.1.html"
+    }
+  },
+  {
+    "desc": "Search case-insensitively for 'error' in logs.txt",
+    "cmd": "grep -i 'error' logs.txt",
+    "difficulty": "easy",
+    "explanation": "Searches input for lines matching a pattern. Supports regex and many flags.",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "case-insensitive"
+    ],
+    "resource": {
+      "title": "grep man page",
+      "url": "https://man7.org/linux/man-pages/man1/grep.1.html"
+    }
+  },
+  {
+    "desc": "Display running processes for current shell session",
+    "cmd": "ps",
+    "difficulty": "easy",
+    "explanation": "Shows processes associated with the current shell. Use 'ps aux' for all processes.",
+    "category": "Processes",
+    "tags": [
+      "processes",
+      "snapshot"
+    ],
+    "resource": {
+      "title": "ps man page",
+      "url": "https://man7.org/linux/man-pages/man1/ps.1.html"
+    }
+  },
+  {
+    "desc": "Show the current shell in use",
+    "cmd": "echo $0",
+    "difficulty": "easy",
+    "explanation": "Prints the given text/variable to standard output.",
+    "category": "Shell Basics",
+    "tags": [
+      "shell basics",
+      "print"
+    ],
+    "resource": {
+      "title": "echo man page",
+      "url": "https://man7.org/linux/man-pages/man1/echo.1.html"
+    }
+  },
+  {
+    "desc": "Show your default shell",
+    "cmd": "echo $SHELL",
+    "difficulty": "easy",
+    "explanation": "Prints the given text/variable to standard output.",
+    "category": "Shell Basics",
+    "tags": [
+      "shell basics",
+      "print"
+    ],
+    "resource": {
+      "title": "echo man page",
+      "url": "https://man7.org/linux/man-pages/man1/echo.1.html"
+    }
+  },
+  {
+    "desc": "Display system uptime",
+    "cmd": "uptime",
+    "difficulty": "easy",
+    "explanation": "Shows how long the system has been running and the average system load.",
+    "category": "System Info",
+    "tags": [
+      "system info",
+      "load"
+    ],
+    "resource": {
+      "title": "uptime man page",
+      "url": "https://man7.org/linux/man-pages/man1/uptime.1.html"
+    }
+  },
+  {
+    "desc": "Search history for a previous command containing 'ssh'",
+    "cmd": "history | grep ssh",
+    "difficulty": "easy",
+    "explanation": "Prints shell command history; piping to grep filters matching entries.",
+    "category": "Shell Basics",
+    "tags": [
+      "shell basics",
+      "history"
+    ],
+    "resource": {
+      "title": "",
+      "url": ""
+    }
+  },
+  {
+    "desc": "Display current user ID and group IDs",
+    "cmd": "id",
+    "difficulty": "easy",
+    "explanation": "Shows user identity information: UID, GID, and group memberships.",
+    "category": "Users",
+    "tags": [
+      "users",
+      "gid"
+    ],
+    "resource": {
+      "title": "id man page",
+      "url": "https://man7.org/linux/man-pages/man1/id.1.html"
+    }
+  },
+  {
+    "desc": "Search recursively for 'ERROR' under logs/",
+    "cmd": "grep -R 'ERROR' logs/",
+    "difficulty": "medium",
+    "explanation": "Searches input for lines matching a pattern. Supports regex and many flags.",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "filter"
+    ],
+    "resource": {
+      "title": "grep man page",
+      "url": "https://man7.org/linux/man-pages/man1/grep.1.html"
+    }
+  },
+  {
+    "desc": "Show listening TCP/UDP ports",
+    "cmd": "ss -tuln",
+    "difficulty": "medium",
+    "explanation": "Lists sockets/ports. -tuln: TCP/UDP, listening, don't resolve names.",
+    "category": "Networking",
+    "tags": [
+      "networking",
+      "listening"
+    ],
+    "resource": {
+      "title": "ss man page",
+      "url": "https://man7.org/linux/man-pages/man8/ss.8.html"
+    }
+  },
+  {
+    "desc": "List files sorted by size, human-readable",
+    "cmd": "ls -lhS",
+    "difficulty": "medium",
+    "explanation": "Lists directory contents. -l shows long format (permissions, owner, size, time), -a includes hidden dotfiles.",
+    "category": "Filesystem",
+    "tags": [
+      "filesystem",
+      "listing"
+    ],
+    "resource": {
+      "title": "ls man page",
+      "url": "https://man7.org/linux/man-pages/man1/ls.1.html"
+    }
+  },
+  {
+    "desc": "Follow a growing log file named app.log",
+    "cmd": "tail -f app.log",
+    "difficulty": "medium",
+    "explanation": "Shows the last N lines of a file. With -f, follows new lines as they are written.",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "follow"
+    ],
+    "resource": {
+      "title": "tail man page",
+      "url": "https://man7.org/linux/man-pages/man1/tail.1.html"
+    }
+  },
+  {
+    "desc": "Show the difference between file1.txt and file2.txt",
+    "cmd": "diff file1.txt file2.txt",
+    "difficulty": "medium",
+    "explanation": "Compares files line-by-line and prints differences.",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "compare"
+    ],
+    "resource": {
+      "title": "diff man page",
+      "url": "https://man7.org/linux/man-pages/man1/diff.1.html"
+    }
+  },
+  {
+    "desc": "Find all Python files in the current directory and subdirectories",
+    "cmd": "find . -name '*.py'",
+    "difficulty": "medium",
+    "explanation": "Searches directory trees for files matching name/size/time and more.",
+    "category": "Search/Find",
+    "tags": [
+      "search/find",
+      "files"
+    ],
+    "resource": {
+      "title": "find man page",
+      "url": "https://man7.org/linux/man-pages/man1/find.1.html"
+    }
+  },
+  {
+    "desc": "Find files larger than 10MB in /var/log",
+    "cmd": "find /var/log -size +10M",
+    "difficulty": "medium",
+    "explanation": "Searches directory trees for files matching name/size/time and more.",
+    "category": "Search/Find",
+    "tags": [
+      "search/find",
+      "files"
+    ],
+    "resource": {
+      "title": "find man page",
+      "url": "https://man7.org/linux/man-pages/man1/find.1.html"
+    }
+  },
+  {
+    "desc": "Make script.sh executable",
+    "cmd": "chmod u+x script.sh",
+    "difficulty": "medium",
+    "explanation": "Changes file mode bits (permissions). 'u+x' adds execute for user.",
+    "category": "Permissions",
+    "tags": [
+      "permissions",
+      "executable"
+    ],
+    "resource": {
+      "title": "chmod man page",
+      "url": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+    }
+  },
+  {
+    "desc": "Change owner of file.txt to user alice",
+    "cmd": "chown alice file.txt",
+    "difficulty": "medium",
+    "explanation": "Changes file owner (and optionally group). Requires privileges for others' files.",
+    "category": "Permissions",
+    "tags": [
+      "permissions",
+      "ownership"
+    ],
+    "resource": {
+      "title": "chown man page",
+      "url": "https://man7.org/linux/man-pages/man1/chown.1.html"
+    }
+  },
+  {
+    "desc": "Extract an archive backup.tar.gz into current directory",
+    "cmd": "tar -xzf backup.tar.gz",
+    "difficulty": "medium",
+    "explanation": "Creates or extracts tar archives; -z uses gzip compression.",
+    "category": "Archives/Compression",
+    "tags": [
+      "archives/compression",
+      "archive"
+    ],
+    "resource": {
+      "title": "tar man page",
+      "url": "https://man7.org/linux/man-pages/man1/tar.1.html"
+    }
+  },
+  {
+    "desc": "Find all .js files under src/",
+    "cmd": "find src/ -name '*.js'",
+    "difficulty": "hard",
+    "explanation": "Searches directory trees for files matching name/size/time and more.",
+    "category": "Search/Find",
+    "tags": [
+      "search/find",
+      "files"
+    ],
+    "resource": {
+      "title": "find man page",
+      "url": "https://man7.org/linux/man-pages/man1/find.1.html"
+    }
+  },
+  {
+    "desc": "Use grep to find lines with numbers in data.txt",
+    "cmd": "grep -E '[0-9]+' data.txt",
+    "difficulty": "hard",
+    "explanation": "Searches input for lines matching a pattern. Supports regex and many flags.",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "filter"
+    ],
+    "resource": {
+      "title": "grep man page",
+      "url": "https://man7.org/linux/man-pages/man1/grep.1.html"
+    }
+  },
+  {
+    "desc": "Search for 'main' function in all .c files",
+    "cmd": "grep -R 'main' --include='*.c' .",
+    "difficulty": "hard",
+    "explanation": "Searches input for lines matching a pattern. Supports regex and many flags.",
+    "category": "Text Processing",
+    "tags": [
+      "text processing",
+      "case-insensitive"
+    ],
+    "resource": {
+      "title": "grep man page",
+      "url": "https://man7.org/linux/man-pages/man1/grep.1.html"
+    }
+  },
+  {
+    "desc": "Pack the current directory into a compressed tarball backup.tar.gz excluding node_modules",
+    "cmd": "tar --exclude=node_modules -czf backup.tar.gz .",
+    "difficulty": "hard",
+    "explanation": "Creates or extracts tar archives; -z uses gzip compression.",
+    "category": "Archives/Compression",
+    "tags": [
+      "archives/compression",
+      "archive"
+    ],
+    "resource": {
+      "title": "tar man page",
+      "url": "https://man7.org/linux/man-pages/man1/tar.1.html"
+    }
+  },
+  {
+    "desc": "Find and delete all .tmp files under /tmp older than 7 days",
+    "cmd": "find /tmp -name '*.tmp' -mtime +7 -delete",
+    "difficulty": "hard",
+    "explanation": "Searches directory trees for files matching name/size/time and more.",
+    "category": "Search/Find",
+    "tags": [
+      "search/find",
+      "delete"
+    ],
+    "resource": {
+      "title": "find man page",
+      "url": "https://man7.org/linux/man-pages/man1/find.1.html"
+    }
+  }
+]
