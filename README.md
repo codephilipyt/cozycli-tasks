@@ -17,7 +17,7 @@ The tasks power both:
 All tasks are stored in a single JSON file:
 
 ```
-questions_reduced.json
+questions.json
 ```
 
 Each entry looks like this:
