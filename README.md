@@ -24,17 +24,24 @@ Each entry looks like this:
 
 ```json
 {
-  "desc": "List all files including hidden, detailed view",
-  "cmd": "ls -la",
-  "difficulty": "easy",
-  "explanation": "Lists directory contents. -l shows long format (permissions, owner, size, time), -a includes hidden dotfiles.",
-  "category": "Filesystem",
-  "tags": ["filesystem", "listing"],
-  "resource": {
-    "title": "ls man page",
-    "url": "https://man7.org/linux/man-pages/man1/ls.1.html"
+    "id": 3,
+    "desc": "Show the absolute path of the current working directory",
+    "cmd": "pwd",
+    "difficulty": "easy",
+    "explanation": "Prints the full path of the current directory.",
+    "category": "Filesystem",
+    "tags": [
+      "pwd",
+      "path"
+    ],
+    "resource": {
+      "title": "pwd man page",
+      "url": "https://man7.org/linux/man-pages/man1/pwd.1.html"
+    },
+    "distros": [
+      "core"
+    ]
   }
-}
 ```
 
 ### Fields
@@ -46,6 +53,7 @@ Each entry looks like this:
 * **category** → broad group (`Filesystem`, `Networking`, `Text Processing`, …)
 * **tags** → 1–2 simple tags (optional)
 * **resource** → object with `{ "title": string, "url": string }` (or `"resource missing"`)
+* **distros** → distro name or core linux commands
 
 ---
 
